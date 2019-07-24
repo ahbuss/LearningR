@@ -9,3 +9,7 @@ roll3 <- function(){
   vals <- sample(die, 2, replace = TRUE, prob=c(1,1,1,1,1,3))
   sum(vals)
 }
+
+rolls <- function(n=10000) {
+  replicate(n, roll2())
+}
